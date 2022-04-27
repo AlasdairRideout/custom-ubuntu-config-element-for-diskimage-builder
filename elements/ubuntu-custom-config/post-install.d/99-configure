@@ -1,4 +1,5 @@
 #!/bin/bash
-
+set -x
+echo "debug overwrite"
 # Prevent cloud-init from overwriting custom sources.list
 sudo sh -c 'echo "apt_preserve_sources_list: true" > /etc/cloud/cloud.cfg.d/92-apt-preserve-source-list.cfg'
